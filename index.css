@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px repeat(2, 1fr) 100px;
-    grid-gap: 10px;
+    gap: 10px;
 }
 .grid-wrapper * {
     text-align: center;
