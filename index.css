@@ -5,87 +5,22 @@
 }
 body {
     margin: 20px;
-    background-color: rgb(51 72 94);
 }
-header h1 {
-    color: white;
-    text-align: center;
+body * {
+    border: 2px solid #f36046;
+    border-radius: 4px;
 }
-header nav{
-    margin-top: 20px;
-    padding: 10px;
-    background-color: white;
-}
-header nav ul{
-    display: flex;
-    justify-content: space-evenly;
-}
-header nav ul li{
-    list-style-type: none;
-    color: rgb(77 163 222);
-    font-size: 22px;
-    font-weight: 600;
+header,footer{
+    height: 200px;
 }
 main {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3 1fr);
-    gap: 20px;
-}
-main .card:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1;
-}
-main .card:nth-child(2) {
-    grid-column: 1;
-    grid-row: 2 / span 2;
-}
-main .card:nth-child(3) {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-}
-main .card:nth-child(4) {
-    grid-column: 3;
-}
-main .card:nth-child(5) {
-    grid-column: 3;
-}
-main .card:nth-child(6) {
-    grid-column: 3;
-}
-main .card {
-    background-color: white;
-    height: fit-content;
-}
-img {
-    display: block;
-    width: 60%;
+    height: calc(100vh - 440px);
 }
 
 @media only screen and (max-width: 1200px) {
-    main {
-        grid-template-columns: repeat(2 1fr);       
-    }
-    main .card:nth-child(1), main .card:nth-child(2), main .card:nth-child(3) {
-        grid-column: 1;
-    }
-    main .card:nth-child(2) {
-        grid-row: 2 / span 1;
-    }
-    main .card:nth-child(3) {
-        grid-row: 3 / span 1;
-    }
-    main .card:nth-child(4), main .card:nth-child(5), main .card:nth-child(6) {
-        grid-column: 2;
-    }
+    
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-        display: block;       
-    }
-    main .card {
-        margin: 20px 0;       
-    }
+    
 }
