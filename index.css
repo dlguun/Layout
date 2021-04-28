@@ -6,15 +6,15 @@
 body {
     margin: 20px;
 }
-body * {
+main {
+    height: calc(100vh - 40px);
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr) 2fr;
+    gap: 20px;
+}
+main * {
     border: 2px solid #f36046;
     border-radius: 4px;
-}
-header,footer{
-    height: 200px;
-}
-main {
-    height: calc(100vh - 440px);
 }
 
 @media only screen and (max-width: 1200px) {
