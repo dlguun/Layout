@@ -12,57 +12,40 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="center-align">Buttons & Icons</h1>
+            <h1 class="center-align">Floating & Fixed Action Buttons</h1>
             <div class="row">
                 <button class="btn blue lighten-1 col s1">CSS 1</button>
                 <button class="btn green lighten-1 col s1 offset-s2">CSS 2</button>
                 <button class="btn yellow lighten-1 black-text col s1 offset-s2">JS 1</button>
-                <button class="btn red lighten-1 col s1 offset-s2">JS 2</button>
+                <button class="dropdown-trigger btn red lighten-1 col s1 offset-s2" data-target="dropdown1">JS 2</button>
+                <ul id="dropdown1" class="dropdown-content">
+                  <li>Li-1</li>
+                  <li class="divider"></li>
+                  <li>Li-2</li>
+                  <li class="divider"></li>
+                  <li>Li-3</li>
+                </ul>
             </div>
-            <div style="margin-top: 20px;">
-              <button class="btn">READ MORE</button>
-              <button class="btn">READ MORE</button>
-              <button class="btn">READ MORE</button>
-              <button class="btn">READ MORE</button>
-              <button class="btn white red-text">READ MORE</button>
-              <button class="btn white teal-text">READ MORE</button>
-              <button class="btn white green-text">READ MORE</button>
-              <button class="btn white grey-text">READ MORE</button>
-              <button class="btn white purple-text">READ MORE</button>
+            <div>
+              <button class="btn-floating red white-text"><i class="material-icons">add</i></button>
+              <button class="btn-floating blue white-text"><i class="material-icons">mode_edit</i></button>
+              <button class="btn-floating pulse green white-text"><i class="material-icons">file_upload</i></button>
             </div>
-            <div style="margin-top: 20px;">
-              <i class="material-icons">shopping_cart</i>
-              <i class="material-icons red-text">settings</i>
-              <i class="material-icons blue-text">search</i>
-              <i class="material-icons">stars</i>
+            <div class="fixed-action-btn">
+              <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+              </a>
+              <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">attach_file</i></a></li>
+              </ul>
             </div>
-            <div style="margin-top: 20px;">
-              <i class="material-icons large">check</i>
-              <i class="material-icons medium">check</i>
-              <i class="material-icons small">check</i>
-              <i class="material-icons tiny">check</i>
-            </div>
-            <div style="margin-top: 20px;">
-              <button class="btn"><i class="material-icons left white-text">shopping_cart</i>BUY NOW</button>
-              <button class="btn">BUY NOW<i class="material-icons right white-text">shopping_cart</i></button>
-              <button class="btn"><i class="material-icons left white-text">shopping_cart</i>BUY NOW</button>
-            </div>
-            <div style="margin-top: 20px;">
-              <button class="btn red white-text">READ MORE</button>
-              <button class="btn purple white-text">READ MORE</button>
-              <button class="btn orange white-text">READ MORE</button>
-              <button class="btn teal white-text">READ MORE</button>
-              <button class="btn black white-text">READ MORE</button>
-              <button class="btn amber white-text">READ MORE</button>
-            </div>
-            <div style="margin-top: 20px;">
-              <button class="btn-large">LARGE BUTTON</button>
-              <button class="btn-large disabled">DISABLED BUTTON</button>
-            </div>
-        </div>
 
 
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./index.js"></script>
     </body>
   </html>
