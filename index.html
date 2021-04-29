@@ -12,36 +12,51 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="center-align">Floating & Fixed Action Buttons</h1>
+            <h1 class="center-align">Navbar</h1>
             <div class="row">
                 <button class="btn blue lighten-1 col s1">CSS 1</button>
                 <button class="btn green lighten-1 col s1 offset-s2">CSS 2</button>
                 <button class="btn yellow lighten-1 black-text col s1 offset-s2">JS 1</button>
-                <button class="dropdown-trigger btn red lighten-1 col s1 offset-s2" data-target="dropdown1">JS 2</button>
-                <ul id="dropdown1" class="dropdown-content">
-                  <li>Li-1</li>
-                  <li class="divider"></li>
-                  <li>Li-2</li>
-                  <li class="divider"></li>
-                  <li>Li-3</li>
+                <button class="btn red lighten-1 col s1 offset-s2">JS 2</button>
+            </div>
+            <nav>
+              <div class="nav-wrapper">
+                <a href="https://nestacademy.mn/"><img src="./assets/logo-primary.svg" alt="logo"/></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>
                 </ul>
-            </div>
-            <div>
-              <button class="btn-floating red white-text"><i class="material-icons">add</i></button>
-              <button class="btn-floating blue white-text"><i class="material-icons">mode_edit</i></button>
-              <button class="btn-floating pulse green white-text"><i class="material-icons">file_upload</i></button>
-            </div>
-            <div class="fixed-action-btn">
-              <a class="btn-floating btn-large red">
-                <i class="large material-icons">mode_edit</i>
-              </a>
-              <ul>
-                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-                <li><a class="btn-floating blue"><i class="material-icons">format_quote</i></a></li>
-                <li><a class="btn-floating yellow darken-1"><i class="material-icons">publish</i></a></li>
-                <li><a class="btn-floating green"><i class="material-icons">attach_file</i></a></li>
-              </ul>
-            </div>
+              </div>
+            </nav>
+            <ul id="dropdown1" class="dropdown-content">
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li><a href="#!">three</a></li>
+            </ul>
+            <nav>
+              <div class="nav-wrapper blue darken-4">
+                <a href="https://nestacademy.mn/"><img src="./assets/logo-primary.svg" alt="logo"/></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>
+                  <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                  <li><button class="btn">LOGIN</button></li>
+                  <li><a><i class="material-icons">person</i>></a></li>
+                </ul>
+              </div>
+            </nav>
+            <nav>
+              <div class="nav-wrapper black">
+                <a href="https://nestacademy.mn/"><img src="./assets/logo-primary.svg" alt="logo"/></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </nav>
 
 
       <!--JavaScript at end of body for optimized loading-->
