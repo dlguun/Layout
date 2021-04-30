@@ -1,16 +1,5 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.fixed-action-btn');
-//     var instances = M.FloatingActionButton.init(elems, {
-//       direction: 'left'
-//     });
+// var el = document.querySelector('.card-tabs');
+// var instance = M.Tabs.init(el, {
+
 // });
-
-// document.ready(function);
-// document.querySelector('.dropdown-trigger').dropdown({ hover: false });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      toolbarEnabled: true
-    });
-});
+// instance.select('tab_id');
