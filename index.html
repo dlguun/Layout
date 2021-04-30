@@ -2,163 +2,138 @@
   <html>
     <head>
       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-      
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link rel="stylesheet" href="./index.css"/>
       <title>Page Title</title>
     </head>
     <body>
-        <div class="container">
-            <h1 class="center-align">Cards</h1>
-            <div class="row">
-                <button class="btn blue lighten-1 col s1">CSS 1</button>
-                <button class="btn green lighten-1 col s1 offset-s2">CSS 2</button>
-                <button class="btn yellow lighten-1 black-text col s1 offset-s2">JS 1</button>
-                <button class="btn red lighten-1 col s1 offset-s2">JS 2</button>
-            </div>
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="card-panel white">
-                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate voluptatibus, eum facere maxime quos. Libero vero minus neque quae sapiente eaque, omnis tempore placeat accusantium recusandae ipsum nulla laboriosam?</span>
-                </div>
-                <div class="card-panel red">
-                  <span class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto cupiditate voluptatibus, eum facere maxime quos. Libero vero minus neque quae sapiente eaque, omnis tempore placeat accusantium recusandae ipsum nulla laboriosam?</span>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="card">
-                  <div class="card-content">
-                    <span class="card-title">Card Title</span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action yellow-text">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-
-              <div class="col s12 m6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Card Title</span>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="card grey lighten-2">
-                  <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                    <span class="card-title">Card Title</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="material-icons">add</i></a>
-                  </div>
-                  <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="card horizontal">
-                  <div class="card-image">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                  </div>
-                  <div class="card-stacked">
-                    <div class="card-content">
-                      <h5>Horizontal</h5>
-                      <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="card">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img src="https://materializecss.com/images/sample-1.jpg">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">This is a link</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m6">
-                <div class="card">
-                  <div class="card-content">
-                    <h5>Tabbed Card</h5>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-tabs">
-                    <ul class="tabs tabs-fixed-width">
-                      <li class="tab"><a href="#test4">Test 1</a></li>
-                      <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                      <li class="tab"><a href="#test6">Test 3</a></li>
-                    </ul>
-                  </div>
-                  <div class="card-content grey lighten-4">
-                    <div id="test4">Test 1</div>
-                    <div id="test5">Test 2</div>
-                    <div id="test6">Test 3</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m6">
-                <div class="card orange white-text">
-                  <div class="card-content">
-                    <h5>Tabbed Card</h5>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                  </div>
-                  <div class="card-tabs">
-                    <ul class="tabs tabs-fixed-width">
-                      <li class="tab"><a href="#test4">Test 1</a></li>
-                      <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                      <li class="tab"><a href="#test6">Test 3</a></li>
-                    </ul>
-                  </div>
-                  <div class="card-content black">
-                    <div id="test4">Test 1</div>
-                    <div id="test5">Test 2</div>
-                    <div id="test6">Test 3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m4">
-
-              </div>
-            </div>
-
-
+      <div class="container mx-auto sm:p-24 p-10 bg-blue-900 grid lg:grid-cols-3 gap-x-4 lg:gap-y-20">
+        <div class="md:col-span-1 col-span-3">
+          <h1 class="text-5xl font-bold text-white">nest agency</h1>
         </div>
+        <div class="md:col-span-2 col-span-3">
+          <hr class="bg-green-300 w-1/5 h-3 border-none md:mt-9 mt-4 mb-4">
+        </div>
+        <div class="md:col-span-1 col-span-3 grid gap-y-8">
+          <h2 class="bg-white p-4 pt-1 leading-relaxed text-4xl font-bold text-blue-900 uppercase">social media activation</h2>
+          <div class="bg-white p-4">
+            <h2 class="text-4xl font-bold text-blue-900 uppercase">about us</h2>
+            <hr class="bg-green-300 w-1/4 h-2 border-none mt-7 mb-8">
+            <p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illum harum nemo voluptatibus delectus architecto sed?</p>
+            <div class="mb-8 flex">
+              <img src="./assets/profile1.png" alt="profile" class="rounded-full w-24 h-24 mr-4 object-cover" />
+              <div class="flex-col content-between">
+                <p class="text-2xl font-bold text-blue-900">Elizabeth Kelley</p>
+                <p class="text-xl text-gray-400 mt-2">Brand Developer, Social Marketer</p>
+              </div>
+            </div>
+            <div class="mb-8 flex">
+              <img src="./assets/profile2.jpeg" alt="profile" class="rounded-full w-24 h-24 mr-4 object-cover" />
+              <div class="flex-col content-between">
+                <p class="text-2xl font-bold text-blue-900">Sophia Christensen</p>
+                <p class="text-xl text-gray-400 mt-2">Content Developer, Project Manager</p>
+              </div>
+            </div>
+            <div class="mb-8 flex">
+              <img src="./assets/profile3.jpeg" alt="profile" class="rounded-full w-24 h-24 mr-4 object-cover" />
+              <div class="flex-col content-between">
+                <p class="text-2xl font-bold text-blue-900">Mae Valdez</p>
+                <p class="text-xl text-gray-400 mt-2">Designer, Web Developer</p>
+              </div>
+            </div>
+            <h2 class="text-4xl font-bold text-blue-900 uppercase">why choose us?</h2>
+            <hr class="bg-green-300 w-1/4 h-3 border-none mt-7 mb-8">
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illum harum nemo voluptatibus delectus architecto sed?</p>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illum harum nemo voluptatibus delectus architecto sed?</p>
+            <p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illum harum nemo voluptatibus delectus architecto sed?</p>
+          </div>
+          <div class="bg-white p-4 text-4xl font-bold text-blue-900">₮8.888.888</div>
+          <div class="bg-white p-4 text-2xl font-bold text-blue-900 flex"><img src="./assets/phone.svg" class="w-7 mr-2"/> 9898-8888 / 8989-8888</div>
+        </div>
+        <div class="md:col-span-2 col-span-3 md:mt-0 mt-8">
+          <div class="grid gap-y-8">
+            <h2 class="md:w-max bg-white p-4 pt-1 pr-12 leading-relaxed text-4xl font-bold text-blue-900 uppercase">what we offer</h2>
+            <div class="bg-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 md:p-8 p-4">
+              <div class="flex items-center">
+                <img src="./assets/folder1/item1.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item2.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item3.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item4.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item5.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item6.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item7.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item8.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item9.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item10.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item11.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item12.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item13.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item14.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item15.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <div class="flex items-center">
+                <img src="./assets/folder1/item16.svg" alt="img" class="object-contain h-16 w-16 mr-2" />
+                <span class="text-xl font-bold text-blue-900">Content Boost</span>
+              </div>
+              <hr class="bg-green-300 lg:col-span-2 h-2 border-none mt-7 mb-8">
+            </div>
+            <h2 class="bg-white p-4 pt-1 pr-12 leading-relaxed text-4xl font-bold text-blue-900 uppercase">our partners & clients</h2>
+            <div class="bg-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 p-8 content-center items-center">
+              <img src="./assets/folder2/item1.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item2.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item3.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item4.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item5.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item6.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item7.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item8.png" alt="img" class="object-contain" />
+              <img src="./assets/folder2/item9.png" alt="img" class="object-contain" />
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-      <!--JavaScript at end of body for optimized loading-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="./index.js"></script>
     </body>
   </html>
