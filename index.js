@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.chips');
-    var instances = M.Chips.init(elems, {});
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {});
 });
