@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var el = document.querySelectorAll('.tabs');
-    var instance = M.Tabs.init(el, {
-        swipeable: false,
-    });    
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
 });
