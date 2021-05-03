@@ -15,51 +15,28 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="center-align">Fancy Form & Input</h1>
+            <h1 class="center-align">Chips & Pagination</h1>
             <div class="row">
                 <button class="btn blue lighten-1 col s1">CSS 1</button>
                 <button class="btn green lighten-1 col s1 offset-s2">CSS 2</button>
                 <button class="btn yellow lighten-1 black-text col s1 offset-s2">JS 1</button>
                 <button class="btn red lighten-1 col s1 offset-s2">JS 2</button>
             </div>
-            <!-- Switch -->
-            <div class="switch">
-              <label>
-                Off
-                <input type="checkbox" checked>
-                <span class="lever"></span>
-                On
-              </label>
+            <!-- Default with no input (automatically generated)  -->
+            <div class="chips"></div>
+            <!-- Customizable input  -->
+            <div class="chips">
+              <input class="custom-class" placeholder="Enter a tag">
             </div>
-
-            <!-- Disabled Switch -->
-            <div class="switch">
-              <label>
-                Off
-                <input disabled type="checkbox">
-                <span class="lever"></span>
-                On
-              </label>
-            </div>
-            <form action="#">
-              <div class="file-field input-field">
-                <div class="btn">
-                  <span>File</span>
-                  <input type="file">
-                </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
-                </div>
-              </div>
-              <p class="range-field">
-                <input type="range" id="test5" min="0" max="100" />
-              </p>
-              <input type="text" class="datepicker" placeholder="Choose a Date">
-              <input type="text" class="timepicker" placeholder="Choose a Time">
-              <button type="submit" class="btn">SUBMIT</button>
-            </form>
-            
-
+            <ul class="pagination">
+              <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+              <li class="active"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="#!">2</a></li>
+              <li class="waves-effect"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!">4</a></li>
+              <li class="waves-effect"><a href="#!">5</a></li>
+              <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
 
 
 
