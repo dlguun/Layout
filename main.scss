@@ -1,9 +1,9 @@
-// @use "sass:map";
+@use "sass:map";
 
 $colors:(
     B200: #0084F8,
     D400: #001B36,
-    White: #FFFFFF,
+    "White": #FFFFFF,
     B100: #58C2F1,
     R100: #FF8576,
     G100: #47C2B1,
@@ -14,6 +14,6 @@ $colors:(
 
 @each $key, $value in $colors {
     .bg-#{$key} {
-        background-color: $value;
+        background-color: map.get($colors, $key);
     }
 }
