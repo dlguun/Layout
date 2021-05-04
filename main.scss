@@ -1,39 +1,19 @@
-$border-clr: #f36046;
-$bg-clr: #fefafa;
+@use "sass:map";
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+$colors:(
+    B200: #0084F8,
+    D400: #001B36,
+    White: #FFFFFF,
+    B100: #58C2F1,
+    R100: #FF8576,
+    G100: #47C2B1,
+    D100: #F0F5F9,
+    D200: #C9D6DF,
+    D300: #52616B,
+);
 
-body {
-    height: 100vh;
-    padding: 20px;
-    background-color: $bg-clr;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    * {
-        padding: 20px;
-        background-color: white;
-        border: 2px solid $border-clr;
-        border-radius: 5px;
-    }
-    div:nth-child(1) {
-        grid-column: 4;
-        grid-row: 4;
-    }
-    div:nth-child(2) {
-        grid-column: 3;
-        grid-row: 3;
-    }
-    div:nth-child(3) {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    div:nth-child(4) {
-        grid-column: 1;
-        grid-row: 1;
+@each $key, $value in $colors {
+    .bg-#{$key} {
+        background-color: $value;
     }
 }
