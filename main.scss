@@ -16,10 +16,34 @@ $colors:(
     ),
 );
 
-@for $i from 2 through 10 {
-    @each $key, $value in map.get($colors, 'Primary') {
-        .border-#{$key}-#{$i} {
-            border: #{$i}px solid map.get($colors, 'Primary', $key);
-        };
-    };
-};
+button {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+
+    &.primary {
+        background-color: map.get($colors, 'Primary', 'B200');
+        color: map.get($colors, 'Primary', 'White');
+    }
+    &.secondary {
+        border: 1px solid map.get($colors, 'Primary', 'B200');
+        background-color: map.get($colors, 'Primary', 'White');
+        color: map.get($colors, 'Primary', 'B200');
+    }
+    &:disabled {
+        background-color: map.get($colors, 'Secondary', 'D200');
+        color: map.get($colors, 'Primary', 'White');
+    }
+    &.success {
+        background-color: map.get($colors, 'Secondary', 'G100');
+        color: map.get($colors, 'Primary', 'White');
+    }
+    &.delete {
+        background-color: map.get($colors, 'Secondary', 'R100');
+        color: map.get($colors, 'Primary', 'White');
+    }
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
