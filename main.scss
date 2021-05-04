@@ -1,19 +1,25 @@
 @use "sass:map";
 
 $colors:(
-    B200: #0084F8,
-    D400: #001B36,
-    "White": #FFFFFF,
-    B100: #58C2F1,
-    R100: #FF8576,
-    G100: #47C2B1,
-    D100: #F0F5F9,
-    D200: #C9D6DF,
-    D300: #52616B,
+    "Primary" : (
+        "B200": #0084F8,
+        "D400": #001B36,
+        "White": #FFFFFF,
+    ),
+    "Secondary" : (
+        "B100": #58C2F1,
+        "R100": #FF8576,
+        "G100": #47C2B1,
+        "D100": #F0F5F9,
+        "D200": #C9D6DF,
+        "D300": #52616B,
+    ),
 );
 
-@each $key, $value in $colors {
-    .bg-#{$key} {
-        background-color: map.get($colors, $key);
-    }
-}
+@for $i from 2 through 10 {
+    @each $key, $value in map.get($colors, 'Primary') {
+        .border-#{$key}-#{$i} {
+            border: #{$i}px solid map.get($colors, 'Primary', $key);
+        };
+    };
+};
